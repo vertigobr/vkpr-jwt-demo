@@ -1,0 +1,13 @@
+server:
+  port: 8000
+
+keycloak:
+  auth-server-url: http://vkpr-keycloak-http.default.svc/auth
+  realm: springboot
+  ssl-required: external
+  use-resource-role-mappings: true
+  bearer-only: true
+  resource: springboot-client
+  credentials:
+    secret: e28e961b-2f86-4877-a696-b76cd231105e
+
