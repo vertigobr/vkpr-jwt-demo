@@ -34,6 +34,8 @@ Users
  - two different users 
  - map each other with a specific Role
  
+ The file realm-export.json can be imported in case you don't want to configure it manually.
+ 
 ## Running the app
 First we need to configure the configuration file properly, so it can reach our Keycloak server.
 
@@ -113,6 +115,7 @@ curl -L -X GET 'http://localhost:8000/api/user' \
 If the Token we obtained matches the "user" role, we will receive a "Hello world" 200 message back.
 Otherwise, we will receive an 403 error message. 
 
+## Deployment
 
 ### Based on:
 - https://www.baeldung.com/spring-boot-keycloak

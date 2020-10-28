@@ -1,13 +1,17 @@
+spring:
+  profiles:
+    include: "default"
+
 server:
-  port: 8000
+  port: "${SERVER_PORT}"
 
 keycloak:
-  auth-server-url: http://vkpr-keycloak-http.default.svc/auth
-  realm: springboot
+  auth-server-url: "${KEYCLOAK_AUTH_URL}"
+  realm: "${KEYCLOAK_REALM}"
   ssl-required: external
   use-resource-role-mappings: true
   bearer-only: true
-  resource: springboot-client
+  resource: "${KEYCLOAK_CLIENT_ID}"
   credentials:
-    secret: e28e961b-2f86-4877-a696-b76cd231105e
+    secret: "${KEYCLOAK_CLIENT_SECRET}"
 
