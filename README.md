@@ -115,8 +115,6 @@ curl -L -X GET 'http://localhost:8000/api/user' \
 If the Token we obtained matches the "user" role, we will receive a "Hello world" 200 message back.
 Otherwise, we will receive an 403 error message. 
 
-## Deployment
-
 ### Based on:
 - https://www.baeldung.com/spring-boot-keycloak
 - https://github.com/novomatic-tech/keycloak-examples
