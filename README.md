@@ -19,15 +19,18 @@ it will send the error "ClassNotFoundException: java.security.acl.Group"
 
 ## Keycloak setup
 The Keycloak server should have a Realm with the following characteristics:
-- Client 
+
+Client 
  - client protocol: openid-connect 
  - access type: confidential
  - service accounts enabled
  - authorization enabled
  - 2 types of custom roles created: User and Admin
-- Roles 
+
+Roles 
  - two roles with Composite Roles option enabled, mapping to the Client roles
-- Users
+
+Users
  - two different users 
  - map each other with a specific Role
  
