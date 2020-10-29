@@ -3,7 +3,7 @@ spring:
     include: "default"
 
 server:
-  port: ${SERVER_PORT}
+  port: 8000
 
 keycloak:
   auth-server-url: "${KEYCLOAK_AUTH_URL}"
